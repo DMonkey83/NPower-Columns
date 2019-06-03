@@ -1,5 +1,3 @@
-import * as c from '../actions/aConstants'
-
 import { products } from '../data'
 
 const rootReducer = (state = products, action) => {
