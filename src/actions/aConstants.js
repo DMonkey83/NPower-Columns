@@ -1,0 +1,1 @@
+export const SELECT_MODAL = 'SELECT_MODAL'

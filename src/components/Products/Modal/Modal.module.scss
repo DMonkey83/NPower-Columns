@@ -1,0 +1,42 @@
+@import "../../../styles//variables.scss";
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(50, 50, 50, 0.7);
+  left: 0;
+  transition: all ease-in-out .2s;
+}
+
+.container {
+  height: auto;
+  width: 80%;
+  padding: 30px;
+  background: $white;
+  position: relative;
+  h2 {
+    color: $modalTitleColor;
+  }
+}
+
+.closeButton {
+  position: absolute;
+  right: 30px;
+  top: 14px;
+  color: $primaryButtonColor;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border: 1px $primaryButtonColor solid;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  &:hover {
+    color: $closeHoverColor;
+    border: 1px $closeHoverColor solid;
+  }
+}
